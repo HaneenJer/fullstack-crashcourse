@@ -20,13 +20,27 @@
         <p>Select your age:</p>
 
         <!-- We use the name tag to group them all together -->
-        <!-- You can choose only one from each group  -->
+        <!-- You can choose only one from each group -->
         <input type="radio" name="age" value="0-25" id="option-1">
         <label for="option-1">0-25</label>
         <input type="radio" name="age" value="26-50" id="option-2">
         <label for="option-2">26-50</label>
         <input type="radio" name="age" value="51+" id="option-3">
         <label for="option-3">51+</label>
+
+        <br><br>
+
+        <!-- Select -->
+        <label for="question">Security Question:</label>
+        <select name="question" id="question">
+            <option value="q1">Who is your celebrity crush?</option>
+            <option value="q2">If you could be Cartoon, what it be?</option>
+            <option value="q3">If you could choose your own name, what it be?</option>
+        </select>
+
+        <br><br>
+        <label for="answer">Answer For Security Question:</label>
+        <input type="text" id="answer">
     </form>
 
 </body>
