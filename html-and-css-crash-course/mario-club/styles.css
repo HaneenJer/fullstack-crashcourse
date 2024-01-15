@@ -157,3 +157,22 @@ form input:focus{
 form input:valid{
     border: 4px solid rgb(27, 142, 27);
 }
+
+/* Psuedo elements */
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em    ;
+}
+
+.join p::first-letter{
+    font-size: 1.2em;
+}
+
+p::selection{
+    background-color: #F63232;
+    color: white;
+}
+
+/* p::after{
+    content: '...';
+} */
