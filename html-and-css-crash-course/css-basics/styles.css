@@ -30,3 +30,15 @@ li{
     text-shadow: 2px 2px #E9E9E9;
 }
 
+p.dishes{
+    font-style: italic;
+    color: #a99696;
+    border: 1px dashed slategray;
+    padding: 20px;
+}
+
+h3.dishes{
+    color: bisque;
+    background-color: slategray;
+    font-size: 20px;
+}
