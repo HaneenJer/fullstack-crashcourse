@@ -1,13 +1,13 @@
-.banner{
+.banner {
     position: relative;
 
 }
 
-.banner img{
+.banner img {
     max-width: 100%;
 }
 
-.banner .welcome{
+.banner .welcome {
     background-color: #FEB614;
     color: white;
     padding: 30px;
@@ -16,30 +16,59 @@
     left: 0px;
 }
 
-.banner h2{
+.banner h2 {
     font-size: 74px;
 }
 
-.banner h2 span{
+.banner h2 span {
     font-size: 1.3em;
 }
 
-header{
+header {
     background-color: #F63232;
     padding: 20px;
     text-align: center;
     position: fixed;
-    width:100%;
+    width: 100%;
     z-index: 1;
     left: 0;
     top: 0;
     right: 0;
 }
 
-header h1{
+header h1 {
     color: white;
     border: 8px solid white;
     padding: 6px 12px;
     display: inline-block;
     border-radius: 36px;
+}
+
+/* when it becomes 140px from the top it becomes fixed*/
+nav {
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 140px;
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: 4B4B4B;
+}
+
+nav li a.join {
+    color: #F63232;
 }
