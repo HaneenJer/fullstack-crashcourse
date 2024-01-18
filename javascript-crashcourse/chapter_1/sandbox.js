@@ -125,3 +125,43 @@ people.forEach(person => {
 
 // console.log(html);
 ul.innerHTML = html;
+
+function objectLit(){
+    let user = {
+        name: "Bob",
+        age: 20 ,
+        email: "BobAwesome@minions.com",
+        location: "Paradise-mall",
+        blogs: ["why mac and cheese?", "go to vilian city"],
+        login: function() {
+            console.log("The user is logged in ");
+        },
+        logout(){
+            console.log("The user is logged out ");
+        },
+        logBlogs : function(){
+            console.log(`${this.name} has written the following blogs:`)
+            this.blogs.forEach((blog)=>{console.log(blog)});
+        }
+    };
+
+    console.log(user);
+    console.log(user.name);
+    console.log(user['email']);
+    
+    console.log(user.age);
+    user.age = 10;
+    console.log(user.age);
+
+    const key = "location";
+    console.log(user[key]);
+
+    user.login();
+    user.logout();
+    user.logBlogs();
+
+    const blogs = [{title: "Why Mac and Cheese", likes: 10},{title: "go to vilian city", likes: 20}];
+    console.log("Blogs: ",blogs);
+    blogs.forEach(blog => {console.log(`the title is ${blog['title']} has ${blog['likes']} likes`)});
+}
+objectLit();
